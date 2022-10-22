@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Self Automated Touchless Locker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="AboutUs.html"><image src="{{ url_for('static', filename='images/blue.png')}}"></a>
+            <div class ="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <div class="text-box">
+            <h1>Self Automated Touchless Locker</h1>
+            <p>Have you ever needed to use a locker after someone, but you were worried about where their hands have been? <br> 
+                Well now with our locker technology you won't have to worry.</p>
+            <a href="" class="hero-btn">Try a locker now</a>
+        </div>
+
+    </section>
+
+<!-- Under Text-->
+<section class ="Lockers">
+    <h1>Who we are </h1>
+    <p>We are Team Degen, a group of degenerators trying to graduate.</p>
+
+    <div class="row">
+        <div class="Lockers-col">
+            <h3>What our technology does</h3>
+            <p>
+               Our locker technology uses a website hosted locker control system. Our system is capable of allowing a user to
+               open and close the locker without them needing to physically come into contact with the locker door. 
+            </p>
+        </div>
+        <div class="Lockers-col">
+            <h3>Our Purpose</h3>
+            <p>
+                Our team hopes to be able to create a locker that will minimize the physical contact between users. 
+            </p>
+        </div>
+        <div class="Lockers-col">
+            <h3>Our Goal</h3>
+            <p>
+                Ultimately, we hope to be able to prevent people from getting sick or infected by the bacteria and germs of other people.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Javascript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
+
+

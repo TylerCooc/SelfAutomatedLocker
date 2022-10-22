@@ -23,6 +23,14 @@ def home():
 
     return render_template("home.html", user=current_user)
 
+@views.route('/mylocker')
+@login_required
+def mylocker():
+    return render_template("mylocker.html", user=current_user)
+
+@views.route('/AboutUs')
+def AboutUs():
+    return render_template("AboutUs.html", user=current_user)
 
 @views.route('/delete-note', methods=['POST'])
 def delete_note():
