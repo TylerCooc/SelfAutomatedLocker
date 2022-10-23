@@ -26,7 +26,11 @@
             <h1>Self Automated Touchless Locker</h1>
             <p>Have you ever needed to use a locker after someone, but you were worried about where their hands have been? <br> 
                 Well now with our locker technology you won't have to worry.</p>
+            {% if user.is_authenticated %}
+            <a href="/" class="hero-btn">Try a locker now</a>
+            {% else %}
             <a href="sign-up" class="hero-btn">Try a locker now</a>
+            {% endif %}
         </div>
 
     </section>
