@@ -18,8 +18,8 @@ ledState = 'LED State Unknown'
 
 button = Pin(16, Pin.IN, Pin.PULL_UP)
 
-ssid = 'Home136'
-password = 'Xfinity2019?'
+ssid = ''
+password = ''
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
