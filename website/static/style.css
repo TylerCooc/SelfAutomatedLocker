@@ -194,3 +194,32 @@ h3{
         flex-direction: column;
     }
 }
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #04AA6D;
+    color: rgb(9, 255, 0);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .block:hover {
+    background-color: rgb(26, 255, 0);
+    color: black;
+  }
+
+  .hero1-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 255, 21);
+    border: 1px solid rgb(9, 255, 0);
+    padding: 12px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -15,6 +14,7 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
+  
     <title>{% block title %}Home{% endblock %}</title>
   </head>
   <body>
@@ -33,7 +33,7 @@
           <a class="nav-item nav-link" id="home" href="/">Home</a>
           <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
           <a class="nav-item nav-link" id="AboutUs" href="/AboutUs">About</a>
-          <a class="nav-item nav-link" id="mylocker" href="/mylocker">My Locker</a>
+          <a class="nav-item nav-link" id="mylocker" href="/locker1">My Locker</a>   <!--add if else statement here to make unique when checked out-->
           {% else %}
           <a class="nav-item nav-link" id="login" href="/login">Login</a>
           <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
@@ -82,6 +82,5 @@
       type="text/javascript"
       src="{{ url_for('static', filename='index.js') }}"
     ></script>
-    
   </body>
 </html>

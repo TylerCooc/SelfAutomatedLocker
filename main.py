@@ -1,4 +1,4 @@
-from website.function import create_app #can import from python files
+from website import create_app #can import from python files
 
 app = create_app()
 
