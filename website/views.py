@@ -1,3 +1,5 @@
+import webbrowser
+
 from flask import Blueprint, render_template, request, flash, jsonify
 from flask_login import login_required, current_user
 from .models import Note
@@ -44,7 +46,8 @@ def locker1():
 @views.route('/locker2')
 def locker2():
     flash('Locker is occupied.', category='error')
-    return render_template("home.html", user=current_user)
+    webbrowser.open('http://127.0.0.1:5000/')
+  #  return render_template("home.html", user=current_user)
 
     #return render_template("locker2.html", user=current_user)
 

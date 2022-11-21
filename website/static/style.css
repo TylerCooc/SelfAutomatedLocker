@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(23, 31, 68, 0.7), rgba(23, 31, 68, 0.7)), url(images/purp.jpg);
+    background-image: linear-gradient(rgba(23, 31, 68, 0.7), rgba(23, 31, 68, 0.7)), url(images/black.JPG);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -143,7 +143,10 @@ nav .fa{
 }
 
 /*--- bottom ---*/
+body{
+    background-image: linear-gradient(rgba(23, 31, 68, 0.7), rgba(23, 31, 68, 0.7)), url(images/black.JPG);
 
+}
 .Lockers{
     width: 80%;
     margin: auto;
@@ -157,7 +160,6 @@ h1{
 }
 
 p{
-    color: rgb(7, 7, 7);
     font-size: 20px;
     font-weight: 300;
     line-height: 22px;
@@ -223,3 +225,37 @@ h3{
     position: relative;
     cursor: pointer;
 }
+h5
+{
+    
+    position: relative;
+    font-size: 3.7em;
+    color:#0e3742;
+    text-transform:uppercase;
+    width: 90%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animated_letter 6s linear infinite;
+}
+
+@keyframes animated_letter
+{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%
+    {
+        color:#0e3742;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%
+    {
+        color: #fff;
+        text-shadow: 0 0 8px #0dc5bc,
+        0 0 20px #0dc5bc,
+        0 0 40px #0dc5bc,
+        0 0 60px #0dc5bc,
+        0 0 80px #0dc5bc,
+        0 0 160px #0dc5bc;
+    }
+}
+
